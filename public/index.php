@@ -29,15 +29,26 @@ require_once __DIR__ . '/../partials/header.php';
             foreach ($voitures as $voiture) {?>
             <tr>
 
-
-                <th scope="row"> <?= $voiture['id']; ?> </th>
-                <td>
-                    <div class="photo" style="background-image:url(assets/img/<?= $voiture['photo']; ?>)"> </div>
-                </td>
-                <td> <?= $voiture['marque']; ?></td>
-                <td> <?= $voiture['modele']; ?></td>
-                <td> <?= $voiture['prix']; ?></td>
-                <td> <?= $voiture['annee_de_sortie']; ?></td>
+                <div>
+                    <th scope="row"> <?= $voiture['id']; ?> </th>
+                </div>
+                <div>
+                    <td>
+                        <div class="photo" style="background-image:url(assets/img/<?= $voiture['photo']; ?>)"> </div>
+                    </td>
+                </div>
+                <div>
+                    <td> <?= $voiture['marque']; ?></td>
+                </div>
+                <div>
+                    <td> <?= $voiture['modele']; ?></td>
+                </div>
+                <div>
+                    <td> <?= $voiture['prix']; ?></td>
+                </div>
+                <div>
+                    <td> <?= $voiture['annee_de_sortie']; ?></td>
+                </div>
 
             </tr>
 </div>
