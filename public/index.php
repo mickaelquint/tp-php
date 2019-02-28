@@ -18,6 +18,7 @@ require_once __DIR__ . '/../partials/header.php';
                 <th scope="col">Modèle</th>
                 <th scope="col">Prix</th>
                 <th scope="col">Année de sortie</th>
+                <th scope="col">Action</th>
 
             </tr>
         </thead>
@@ -44,10 +45,10 @@ require_once __DIR__ . '/../partials/header.php';
                     <td> <?= $voiture['modele']; ?></td>
                 </div>
                 <div>
-                    <td> <?= $voiture['prix']; ?></td>
+                    <td> <?=$nombre_format_francais = number_format($voiture['prix'], 2, ',', ' '); ?> € </td>
                 </div>
                 <div>
-                    <td> <?= $voiture['annee_de_sortie']; ?></td>
+                    <td> <?= $voiture['annee_sortie']; ?></td>
                 </div>
 
             </tr>

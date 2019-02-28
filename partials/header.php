@@ -46,7 +46,7 @@ require_once __DIR__ . '/../config/database.php';
           // Gestion du menu dynamique
           $menuItems = [
             ['label' => 'Accueil', 'link' => 'index.php'],
-            ['label' => 'Ajouter une voiture', 'link' => 'category_list.php']
+            ['label' => 'Ajouter une voiture', 'link' => 'car_add.php']
           ];
         ?>
 
